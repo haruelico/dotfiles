@@ -1,0 +1,12 @@
+# [core]
+# 	repositoryFormatVersion = 1
+# [extensions]
+# 	objectFormat = sha256
+# 	compatObjectFormat = sha1
+[user]
+	name = Harue Lico
+	email = 44547634+haruelico@users.noreply.github.com
+[ghq]
+	root = ~/src
+[commit]
+	verbose = true
