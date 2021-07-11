@@ -123,5 +123,9 @@ if [ -x ~/flutter/bin/flutter ]; then
   export PATH="~/flutter/bin:$PATH"
 fi
 
+if [ -x ~/bin/chezmoi ]; then
+  source <(~/bin/chezmoi completion bash)
+fi
+
 export PATH="~/bin:$PATH"
 export EDITOR=vim
