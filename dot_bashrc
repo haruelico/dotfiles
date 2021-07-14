@@ -103,6 +103,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
+direnv_exist=$(which direnv)
+if [ direnv_exist != "0" ]; then
+  eval "$(direnv hook bash)"
+fi
+
 if [ -x ~/.rbenv/bin/rbenv ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
