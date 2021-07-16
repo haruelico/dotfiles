@@ -132,3 +132,5 @@ fi
 
 export PATH="~/bin:$PATH"
 export EDITOR=vim
+
+test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
