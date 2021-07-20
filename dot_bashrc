@@ -134,3 +134,11 @@ export PATH="~/bin:$PATH"
 export EDITOR=vim
 
 test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
+peco_history() {
+  local cmd=$(cat ~/.bash_history | tac | uniq | peco)
+  READLINE_LINE="$cmd"
+  READLINE_POINT=${#cmd}
+}
+
+bind -x '"\C-r": "peco_history"'
