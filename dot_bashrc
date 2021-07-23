@@ -141,4 +141,6 @@ peco_history() {
   READLINE_POINT=${#cmd}
 }
 
-bind -x '"\C-r": "peco_history"'
+if [[ -t 1 ]]; then
+  bind -x '"\C-r": "peco_history"'
+fi
